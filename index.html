@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대구미술관</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- bx -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <a href="#"><img src="img/logo_header.png" alt="logo_header"></a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <!-- 전시 -->
+                    <li>
+                        <a href="#">전시</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">지난전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 교육/행사 -->
+                    <li>
+                        <a href="#">교육/행사</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li><a href="#">교육</a></li>
+                                <li><a href="#">전시단계</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 쇼핑몰/아카이브 -->
+                    <li>
+                        <a href="#">쇼핑몰/아카이브</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li><a href="#">쇼핑몰</a></li>
+                                <li>
+                                    <a href="#">이건희컬렉션</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">이건희컬렉션</a></li>
+                                        <li><a href="#">이인성</a></li>
+                                        <li><a href="#">서동전</a></li>
+                                        <li><a href="#">서전달</a></li>
+                                        <li><a href="#">변종하</a></li>
+                                        <li><a href="#">이쾌대</a></li>
+                                        <li><a href="#">김종영</a></li>
+                                        <li><a href="#">문학진</a></li>
+                                        <li><a href="#">유영국</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">아카이브실</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">아카이브검색</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">미술정보센터</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">도서구입희망</a></li>
+                                        <li><a href="#">도서검색</a></li>
+                                        <li><a href="#">이달의추천도서</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 미술상 -->
+                    <li>
+                        <a href="#">미술상</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">이인성미술상</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">LEEINSUNG ART PRIZE</a></li>
+                                        <li><a href="#">WINNERS</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">정점식미술이론상</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">JUNGJEUMSIK ART PRIZE</a></li>
+                                        <li><a href="#">WINNERS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 디지털미술관 -->
+                    <li>
+                        <a href="#">디지털미술관</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li><a href="#">동영상</a></li>
+                                <li>
+                                    <a href="#">디지털 전시 '몰입'</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">VR 영상</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">VR 전시</a></li>
+                                <li><a href="#">사진</a></li>
+                                <li><a href="#">발간자료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 소식 -참여 -->
+                    <li>
+                        <a href="#">소식 &middot; 참여</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">새소식</a></li>
+                                <li><a href="#">참여마당</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">언론기사</a></li>
+                                <li>
+                                    <a href="#">뉴스레터</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">메일링서비스 가입</a></li>
+                                        <li><a href="#">e-뉴스레터</a></li>
+                                        <li><a href="#">메일링서비스 취소</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Art 카테고리</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">미술분야</a></li>
+                                        <li><a href="#">문화예술 네트워크</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">서포터즈</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">서포터즈 소개</a></li>
+                                        <li><a href="#">서포터즈 활동 자료실</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 미술관소개/안내 -->
+                    <li>
+                        <a href="#">미술관소개/안내</a>
+                        <div class="sub-wrap">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">대구미술관</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">미술관소개</a></li>
+                                        <li><a href="#">MI</a></li>
+                                        <li><a href="#">조직 및 구성원</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">관람안내</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">관람시간 및 요금</a></li>
+                                        <li><a href="#">도슨트 프로그램</a></li>
+                                        <li><a href="#">수어통역 도슨트</a></li>
+                                        <li><a href="#">디지털 전시 '몰입'</a></li>
+                                        <li><a href="#">관람예절</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li>
+                                    <a href="#">시설안내</a>
+                                    <ul class="mini-menu">
+                                        <li><a href="#">미술관시설</a></li>
+                                        <li><a href="#">전시실</a></li>
+                                        <li><a href="#">층별안내</a></li>
+                                        <li><a href="#">편의시설</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="head-side">
+                <ul>
+                    <!-- 햄버거 -->
+                    <li class="hamburger">
+                        <a href="#"></a>
+                        <div class="ham-content">
+                            <div class="ham-wrap">
+                                <button class="hamX"></button>
+                                <h1><a href="#">전체메뉴</a></h1>
+                                <ul class="ham-main">
+                                    <!-- 전시 -->
+                                    <li>
+                                        <a href="#">전시</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">현재전시</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">지난전시</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">예정전시</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 교육/행사 -->
+                                    <li>
+                                        <a href="#">교육/행사</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">교육</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">전시안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">이벤트</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 소장품 아카이브 -->
+                                    <li>
+                                        <a href="#">소장품/아카이브</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">소장품</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">이건희컬렉션</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">이건희컬렉션</a></li>
+                                                    <li><a href="#">이인성</a></li>
+                                                    <li><a href="#">서동진</a></li>
+                                                    <li><a href="#">서진달</a></li>
+                                                    <li><a href="#">변종하</a></li>
+                                                    <li><a href="#">이쾌대</a></li>
+                                                    <li><a href="#">김종영</a></li>
+                                                    <li><a href="#">문학진</a></li>
+                                                    <li><a href="#">유영국</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">아카이브실</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">이용안내</a></li>
+                                                    <li><a href="#">아카이브검색</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">미술정보센터</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">이용안내</a></li>
+                                                    <li><a href="#">도서구입희망</a></li>
+                                                    <li><a href="#">도서검색</a></li>
+                                                    <li><a href="#">이달의추천도서</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 미술상 -->
+                                    <li>
+                                        <a href="#">미술상</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">이인성미술상</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">LEEINSUNG ART PRIZE</a></li>
+                                                    <li><a href="#">WINNERS</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">정점식미술이론상</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">JUNGJEUMSIK ART PRIZE</a></li>
+                                                    <li><a href="#">WINNERS</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 디지털미술관 -->
+                                    <li>
+                                        <a href="#">디지털미술관</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">동영상</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">디지털 전시 '몰입'</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">이용안내</a></li>
+                                                    <li><a href="#">VR 영상</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">VR 전시</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">사진</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">발간자료</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 소식 참여-->
+                                    <li>
+                                        <a href="#">소식 &middot; 참여</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">공지사항</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">새소식</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">참여마당</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">보도자료</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">언론기사</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">뉴스레터</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">메일링서비스가입</a></li>
+                                                    <li><a href="#">e-뉴스레터</a></li>
+                                                    <li><a href="#">e-메일서비스 취소</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Art 카테고리</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">미술분야</a></li>
+                                                    <li><a href="#">문화예술 네트워크</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">서포터즈</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">서포터즈 소개</a></li>
+                                                    <li><a href="#">서포터즈 활동 자료실</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 미술관 소개/안내 -->
+                                    <li>
+                                        <a href="#">미술관 소개/안내</a>
+                                        <ul class="ham-sub">
+                                            <li>
+                                                <a href="#">대구미술관</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">인사말</a></li>
+                                                    <li><a href="#">미술관소개</a></li>
+                                                    <li><a href="#">MI</a></li>
+                                                    <li><a href="#">조직 및 구성원</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">관람안내</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">관람시간 및 요금</a></li>
+                                                    <li><a href="#">도슨트프로그램</a></li>
+                                                    <li><a href="#">수어통역도슨트</a></li>
+                                                    <li><a href="#">디지털 전시 '몰입'</a></li>
+                                                    <li><a href="#">관람예절</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">오시는 길</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">시설안내</a>
+                                                <ul class="ham-mini">
+                                                    <li><a href="#">미술관시설</a></li>
+                                                    <li><a href="#">전시실</a></li>
+                                                    <li><a href="#">층별안내</a></li>
+                                                    <li><a href="#">편의시설</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- find -->
+                    <li class="find">
+                        <a href="#"></a>
+                        <div class="findbox">
+                            <input type="text" name="find" id="find" placeholder="Search">
+                        </div>
+                    </li>
+                    <!-- language -->
+                    <li class="language">
+                        <a href="#">한국어</a>
+                        <ul class="lan">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">ENG</a></li>
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+        <section class="section01">
+            <div class="orangebox">20인이상 단체 관람 예약</div>
+            <div class="swiper banner-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/20230925163812596.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20230925163446134.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20231031094344082.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20230925163933630.jpg" />
+                    </div>
+                </div>
+                <div class="banner-pager"></div>
+            </div>
+        </section>
+        <!-- four-box -->
+        <section class="section02">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <strong>관람시간</strong><br>
+                                하절기(4월~10월) : 오전10시~오후7시 <br>
+                                동절기(11월~3월) : 오전10시~오후6시 <br>
+                                관람종료 1시간 전 입장( *매주 월요일 정기 휴관)
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <strong>관람요금</strong><br>
+                                성인기준 1,000원<br>
+                                개인·단체·대상에 따라 일부 할인 적용
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <strong>오시는 길</strong><br>
+                                대구광역시 수성구 미술관로 40 <br>
+                                (우.42250)
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                <strong>문화가 있는 날</strong><br>
+                                매월 마지막 수요일 <br>
+                                전시관람료 무료(일부 특별기획전은 할인)
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- education -->
+        <section class="section03">
+            <div class="inner">
+                <div class="title">
+                    <h1><a href="#">교육</a></h1>
+                </div>
+                <div class="eduu">
+                    <div class="swiper edu-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu1.do" alt="edu1">
+                                    </div>
+                                    <div class="info">
+                                        <p> &lsaquo;칼 안드레&rsaquo; 어린이 대상 렉처프로그램- 바닥으로 내려온 조각</p>
+                                        <p><span></span> 교육대상 &#124; 초등학생1-3, 4-6학년</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-11-18~2023-11-25</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu2.do" alt="edu2">
+                                    </div>
+                                    <div class="info">
+                                        <p>미술관 재발견</p>
+                                        <p><span></span> 교육대상 &#124; 모든 사람</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-10-21~2023-12-31</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu3.do" alt="edu3">
+                                    </div>
+                                    <div class="info">
+                                        <p>뮤지엄 플러스</p>
+                                        <p><span></span> 교육대상 &#124; 모든 사람</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-04-11~2023-12-31</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu4.do" alt="edu4">
+                                    </div>
+                                    <div class="info">
+                                        <p>2023 청소년 진로 체험 교육 &lsaquo;미술관 탐험가들&rsaquo;</p>
+                                        <p><span></span> 교육대상 &#124; 중학교, 고등학교 학급, 동아리 단체</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-10-05~2023-11-30</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu1.do" alt="edu1">
+                                    </div>
+                                    <div class="info">
+                                        <p> &lsaquo;칼 안드레&rsaquo; 어린이 대상 렉처프로그램- 바닥으로 내려온 조각</p>
+                                        <p><span></span> 교육대상 &#124; 초등학생1-3, 4-6학년</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-11-18~2023-11-25</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu2.do" alt="edu2">
+                                    </div>
+                                    <div class="info">
+                                        <p>미술관 재발견</p>
+                                        <p><span></span> 교육대상 &#124; 모든 사람</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-10-21~2023-12-31</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu3.do" alt="edu3">
+                                    </div>
+                                    <div class="info">
+                                        <p>뮤지엄 플러스</p>
+                                        <p><span></span> 교육대상 &#124; 모든 사람</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-04-11~2023-12-31</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/edu4.do" alt="edu4">
+                                    </div>
+                                    <div class="info">
+                                        <p>2023 청소년 진로 체험 교육 &lsaquo;미술관 탐험가들&rsaquo;</p>
+                                        <p><span></span> 교육대상 &#124; 중학교, 고등학교 학급, 동아리 단체</p>
+                                        <p> <span class="orange">진행중</span> 교육일자 2023-10-05~2023-11-30</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu-button">
+                        <div class="edu-prev"></div>
+                        <div class="edu-next"></div>
+                        <div class="edu-stop"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search -->
+        <section class="section04">
+            <div class="inner">
+                <input type="text" class="searchbox" placeholder="Search">
+                <ul class="findlist">
+                    <li><a href="#">인기검색어</a>
+                    <li><a href="#"> #칼 안드레</a>
+                    <li><a href="#"> #윤석남</a>
+                    <li><a href="#"> #이성경</a>
+                    <li><a href="#"> #램브란트</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- notice -->
+        <section class="section05">
+            <div class="inner">
+                <div class="notebox">
+                    <h1>공지사항</h1>
+                    <a href="#"></a>
+                    <div class="note-con">
+                        <ul>
+                            <li>
+                                <a href="#">2024학년도 대학수학능력 시행에 따른 발권시간 조정 안내</a>
+                                <span>2023.11.15</span>
+                            </li>
+                            <li>
+                                <a href="#">도슨트 전시해설 프로그램 안내(10.24.~11.19.)</a>
+                                <span>2023.10.23</span>
+                            </li>
+                            <li>
+                                <a href="#">디지털 가상공간 &lsaquo;몰입&lsaquo; 재운영 안내(10.17.~12.31)</a>
+                                <span>2023.10.12</span>
+                            </li>
+                            <li>
+                                <a href="#">2023년 대구미술관 소장품 수집 연기 안내</a>
+                                <span>2023.10.10</span>
+                            </li>
+                            <li>
+                                <a href="#">[대구메타라이브] 대구미술관 웰컴홈 향연 전시이벤트 당첨안내</a>
+                                <span>2023.10.05</span>
+                            </li>
+                            <li>
+                                <a href="#">2023년 추석연휴 미술관 운영 안내(무료입장/ 휴관 / 도슨트 미운영)</a>
+                                <span>2023.09.19</span>
+                            </li>
+                            <li>
+                                <a href="#">추석연휴 및 개천절 도슨트 전시해설 미운영 안내(9.28.~10.3.)</a>
+                                <span>2023.09.12</span>
+                            </li>
+                            <li>
+                                <a href="#">아카이브실 재운영 안내</a>
+                                <span>2023.08.31</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="eventbox">
+                    <img src="img/getImage.do" alt="getImage">
+                    <a href="#"></a>
+                    <div class="event-down">
+                        <p>2023수험생 무료입장 이벤트</p>
+                        <div class="pager">
+                            <span class="prev"></span>
+                            <span>1/1</span>
+                            <span class="next"></span>
+                            <span class="stop"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- collection -->
+        <section class="section06">
+            <div class="inner">
+                <div class="collection-up">
+                    <h1>소장품</h1>
+                </div>
+                <div class="swiper collection-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/collection1.do" alt="collection1">
+                            <div class="info">
+                                <p>이원희 , &lsaquo;지경리에서 &rsaquo; , 1994</p>
+                                <span>Oil on canvas. 96cm x 161cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection2.do" alt="collection2">
+                            <div class="info">
+                                <p>권기철 , &lsaquo; 어이쿠 &rsaquo; , 2014</p>
+                                <span>한지 위에 먹 , 194cm x 122.5cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection3.jpg" alt="collection3">
+                            <div class="info">
+                                <p>류인 , &lsaquo; 살해동기 &rsaquo; , 1991</p>
+                                <span>청동, 철 , 45 x 172 x 26.5</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection4.do" alt="collection4">
+                            <div class="info">
+                                <p>힐러리 페치스 , &lsaquo; 오래된 덩굴 &rsaquo; , 2022</p>
+                                <span>캔버스에 아크릴 , 188cm x 162.9cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection5.do" alt="collection5">
+                            <div class="info">
+                                <p>강대운 , &lsaquo; 지금 당신으로 향한 청자빛 사랑이 &rsquo; , 1981</p>
+                                <span>Oil on canvas , 72cm x 90cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection6.do.jpg" alt="collection6">
+                            <div class="info">
+                                <p>김동기 , &lsaquo; 비밀의 화원 &rsquo; , 2006</p>
+                                <span>캔버스에 아크릴릭 , 53.1cm x 72.7cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection7.do" alt="collection7">
+                            <div class="info">
+                                <p>변종하 , &lsaquo; 오리가 있는 풍경 &rsaquo; , 1976</p>
+                                <span>부조된 패널, 천 위에 유채 , 85.7cm x 85.7cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection8.do" alt="collection8">
+                            <div class="info">
+                                <p>이흥덕 , &lsaquo; 통일의 까페 &rsaquo; , 1989</p>
+                                <span>캔버스에 유채 , 130.3cm x 193.9cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection9.do" alt="collection9">
+                            <div class="info">
+                                <p>오의석 , &lsaquo; 돌 83-4 &rsaquo; , 1983</p>
+                                <span>자연석+철, 오브제 용접, 스테인리스 스틸 , 55(H)cm x 75(W):75cm</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/collection10.do" alt="collection10">
+                            <div class="info">
+                                <p>한운성 , &lsaquo; 진달래 &rsaquo; , 2018</p>
+                                <span>캔버스에 유채 , 200cm x 200cm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-button">
+                        <div class="collection-prev"></div>
+                        <div class="collection-pager"></div>
+                        <div class="collection-next"></div>
+                        <div class="collection-stop"></div>
+                        <div class="collection-more"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sns -->
+        <section class="section07">
+            <div class="inner">
+                <ul class="snslist">
+                    <li>
+                        <a href="#">
+                            <p>유튜브 <span>Youtube</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>네이버 블로그 <span>Naver</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>인스타그램<span>Instargram</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>카카오 채널 <span>Kakao</span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-up">
+            <div class="inner">
+                <dl class="show">
+                    <dt>관람안내</dt>
+                    <dd>관람시설 및 요금</dd>
+                    <dd>도슨트 프로그램</dd>
+                    <dd>수어통역 도슨트</dd>
+                    <dd>디지털 전시'몰입'</dd>
+                    <dd>관람예절</dd>
+                </dl>
+                <dl class="place">
+                    <dt>시설안내</dt>
+                    <dd>미술관시설</dd>
+                    <dd>전시실</dd>
+                    <dd>츨빌안내</dd>
+                    <dd>편의시설</dd>
+                </dl>
+                <dl class="use">
+                    <dt>이용안내</dt>
+                    <dd>이용약관</dd>
+                    <dd>개인정보처리방침</dd>
+                </dl>
+                <dl class="mailing">
+                    <dt>메일링 서비스</dt>
+                    <dd>메일링 서비스 가입</dd>
+                    <dd>e-뉴스레터</dd>
+                    <dd>메일링 서비스 가입철회</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="inner">
+                <p>주소 : (우.42250) 대구광역시 수성구 미술관로 40 대표전화 : +82-53-803-7900팩스번호 : +82-53-803-7859 &copy; DAEGU ARTMUSEUM,
+                    KOREA</p>
+                <p>대표전화: <span class="orange"><a href="#">053-803-7900</a></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
